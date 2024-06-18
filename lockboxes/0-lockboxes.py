@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+'''Determines if all the boxes can be opened. boxes is a list of lists.'''
 
 def canUnlockAll(boxes):
-    '''Determines if all the boxes can be opened. boxes is a list of lists.'''
     n = len(boxes)
     unlocked = set()
     keys = set([0])
