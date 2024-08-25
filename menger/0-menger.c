@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 
+/**
+ * menger - Draws a 2D Menger Sponge of a given level.
+ * @level: Level of the Menger Sponge (0 or higher).
+ * Description: Prints a Menger Sponge to the console based on the given level.
+ * Return: Nothing (void function).
+ */
+
+
 void menger(int level)
 {
 	if (level < 0)
