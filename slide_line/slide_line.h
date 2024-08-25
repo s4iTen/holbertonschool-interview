@@ -1,6 +1,8 @@
 #ifndef SLIDE_LINE_H
 #define SLIDE_LINE_H
 
+#include <stddef.h>  // Include this header for size_t
+
 #define SLIDE_LEFT 0
 #define SLIDE_RIGHT 1
 
