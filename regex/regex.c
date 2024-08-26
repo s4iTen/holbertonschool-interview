@@ -4,6 +4,7 @@
  * regex_match - checks whether a given pattern matches a given string
  * @str: string to check
  * @pattern: pattern to match
+ * Return: 1 if the pattern matches the string, 0 otherwise
  */
 int regex_match(char const *str, char const *pattern)
 {
