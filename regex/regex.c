@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * regex_match - checks whether a given pattern matches a given string
+ * @str: string to check
+ * @pattern: pattern to match
+ */
 int regex_match(char const *str, char const *pattern)
 {
 	if (*str == '\0' && *pattern == '\0')
