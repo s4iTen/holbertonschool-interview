@@ -30,10 +30,11 @@ request(url, (error, response, body) => {
 
   const charactersUrls = film.characters;
   const charactersPromises = charactersUrls.map(characterUrl => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       request(characterUrl, (err, resp, charBody) => {
         if (err) {
-          reject(err);
+          console.error(`Error fetching character: ${err.message}`);
+          resolve(null);
         } else {
           const character = JSON.parse(charBody);
           resolve(character.name);
@@ -44,7 +45,9 @@ request(url, (error, response, body) => {
 
   Promise.all(charactersPromises)
     .then(characters => {
-      characters.forEach(character => console.log(character));
+      characters.forEach(character => {
+        if (character) console.log(character);
+      });
     })
     .catch(err => {
       console.error('Error fetching characters:', err);
