@@ -51,20 +51,20 @@ void multiply(char *num1, char *num2)
     int i, j, carry, n1, n2, sum;
 
     if (!result)
-        exit(98);
+        exit(98);  // Handle memory allocation failure
 
     for (i = len1 - 1; i >= 0; i--)
     {
-        n1 = num1[i] - '0';
+        n1 = num1[i] - '0';  // Convert char to int
         carry = 0;
         for (j = len2 - 1; j >= 0; j--)
         {
-            n2 = num2[j] - '0';
+            n2 = num2[j] - '0';  // Convert char to int
             sum = n1 * n2 + result[i + j + 1] + carry;
             carry = sum / 10;
             result[i + j + 1] = sum % 10;
         }
-        result[i + j + 1] += carry;
+        result[i + j + 1] += carry;  // Add any remaining carry
     }
 
     // Skip leading zeros
@@ -73,15 +73,17 @@ void multiply(char *num1, char *num2)
         i++;
 
     if (i == len1 + len2)
-        _putchar('0');
+        _putchar('0');  // Handle case of result being zero
     else
     {
         for (; i < len1 + len2; i++)
-            _putchar(result[i] + '0');
+            _putchar(result[i] + '0');  // Convert int to char for output
     }
-    _putchar('\n');
-    free(result);
+    _putchar('\n');  // Newline for output formatting
+
+    free(result);  // Free allocated memory
 }
+
 
 
 /**
