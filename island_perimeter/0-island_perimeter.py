@@ -9,6 +9,7 @@ def island_perimeter(grid):
     Input: List of list of integers
     Returns: Integer
     """
+
     if not grid:
         return 0
 
