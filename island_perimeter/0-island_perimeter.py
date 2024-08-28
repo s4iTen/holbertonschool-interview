@@ -4,9 +4,13 @@
 
 
 def island_perimeter(grid):
-    """
-    Calculate the perimeter of an island (1s) in a 2D grid, where 0s represent water.
-    Returns 0 if the grid is empty or has no land cells.
+    """[summary]
+
+    Args:
+        grid ([type]): [description]
+
+    Returns:
+        [type]: [description]
     """
 
     if not grid:
