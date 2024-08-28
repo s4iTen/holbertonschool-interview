@@ -1,18 +1,9 @@
 #!/usr/bin/python3
-"""
-Module used to
-"""
+"""Function that returns the perimeter of the island described"""
 
 
 def island_perimeter(grid):
-    """[summary]
-
-    Args:
-        grid ([type]): [description]
-
-    Returns:
-        [type]: [description]
-    """
+    """Function that returns the perimeter of the island described"""
 
     perimeter = 0
     m = len(grid)
