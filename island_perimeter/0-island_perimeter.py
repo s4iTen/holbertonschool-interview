@@ -5,9 +5,8 @@
 
 def island_perimeter(grid):
     """
-    island_perimeter - Function to find perimiter of an island
-    Input: List of list of integers
-    Returns: Integer
+    Calculate the perimeter of an island (1s) in a 2D grid, where 0s represent water.
+    Returns 0 if the grid is empty or has no land cells.
     """
 
     if not grid:
