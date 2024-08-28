@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-
 """ Function to calculate the perimeter of an island in a grid. """
 
 
 def island_perimeter(grid):
-    """[summary]
-
-    Args:
-        grid ([type]): [description]
-
-    Returns:
-        [type]: [description]
+    """
+    Calculate the perimeter of an island (1s) in a 2D grid, where 0s represent water.
+    Returns 0 if the grid is empty or has no land cells.
     """
 
     if not grid:
