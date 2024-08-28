@@ -5,6 +5,7 @@
 
 def island_perimeter(grid):
     """
+    island_perimeter - Function to find perimiter of an island
     Input: List of list of integers
     Returns: Integer
     """
