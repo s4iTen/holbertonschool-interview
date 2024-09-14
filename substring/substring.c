@@ -32,12 +32,12 @@ int word_len, int start)
 	return (words_found == nb_words);
 }
 /**
- * find_substring - Finds all possible substrings containing all specified words.
+ * find_substring - Finds all possible substrings containing all specified
+ * words.
  * @s: The string to scan.
  * @words: Array of words to find within the string.
  * @nb_words: The number of words in the array `words`.
  * @n: Pointer to an integer to store the number of substrings found.
- * 
  * Return: An array of the starting indices of each found substring,
  * or NULL if none are found.
  * If no valid substrings are found, `n` will be set to 0.
